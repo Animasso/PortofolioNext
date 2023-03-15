@@ -1,0 +1,25 @@
+.pseudo {
+  position: relative;
+  border: none;
+  margin-top: 50px;
+}
+.pseudo::before,
+.pseudo::after {
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  content: "";
+}
+.pseudo::before {
+  left: 0;
+  top: 0;
+
+  border-left: 8px solid hsla(221, 62%, 31%, 1);
+  border-top: 8px solid hsla(221, 62%, 31%, 1);
+}
+.pseudo::after {
+  right: 0;
+  bottom: 0;
+  border-right: 8px solid hsla(221, 62%, 31%, 1);
+  border-bottom: 8px solid hsla(221, 62%, 31%, 1);
+}
