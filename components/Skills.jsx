@@ -1,7 +1,7 @@
 import React from "react";
 import BoxSkills from "./BoxSkills";
 
-function Skills() {
+const Skills = () => {
   return (
     <div className=" w-full lg:h-screen p-2">
       <div className=" max-w-[1240px] mx-auto flex flex-col justify-center h-full">
@@ -55,10 +55,14 @@ function Skills() {
             logoSkill="/../public/assets/skills/visual.png"
             stack="Visual Studio"
           />
+          <BoxSkills
+            logoSkill="/../public/assets/skills/Swagger.png"
+            stack="Swagger"
+          />
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Skills;
