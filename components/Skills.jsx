@@ -59,6 +59,10 @@ const Skills = () => {
             logoSkill="/../public/assets/skills/Swagger.png"
             stack="Swagger"
           />
+          <BoxSkills
+            logoSkill="/../public/assets/skills/figma.png"
+            stack="Figma"
+          />
         </div>
       </div>
     </div>

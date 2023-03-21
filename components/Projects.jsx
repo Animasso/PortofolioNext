@@ -1,6 +1,10 @@
-import Image from "next/image";
-
-import projectPic from "../public/assets/projectPic/marvelQuizz.png";
+import marvelPic from "../public/assets/projectPic/marvelQuizz.png";
+import graphPic from "../public/assets/projectPic/grap.png";
+import hrPic from "../public/assets/projectPic/hr.png";
+import bankPic from "../public/assets/projectPic/bank.png";
+import learnPic from "../public/assets/projectPic/learn.png";
+import ProjectBox from "./ProjectBox";
+graphPic;
 const Projects = () => {
   return (
     <div className=" w-full">
@@ -10,13 +14,25 @@ const Projects = () => {
         </p>
         <h2 className="py-4">Mes réalisations</h2>
         <div className=" grid md:grid-cols-2 gap-8">
-          <div className=" relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-500 rounded-xl group hover:bg-gradient-to-r from-emerald-200 to- bg-emerald-600">
-            <Image
-              className="  rounded-xl group-hover:opacity-10"
-              src={projectPic}
-              alt="marvelPic"
-            />
-          </div>
+          <ProjectBox
+            pic={marvelPic}
+            projectName="Marvel Quizz"
+            stack="React js"
+            projectUrl="https://marvelprojet-56a90.firebaseapp.com/"
+          />
+          <ProjectBox pic={hrPic} projectName="Hrnet" stack="React js" />
+          <ProjectBox
+            pic={bankPic}
+            projectName="Argent Bank"
+            stack="React js"
+          />
+          <ProjectBox
+            pic={learnPic}
+            projectName="Learn@Home"
+            stack="Figma"
+            projectUrl="https://www.figma.com/file/xZQYu7fA1aiQIeENJeRXDv/Learn%40Home?node-id=0-1&t=rk8Uv54f5ROibuFT-0"
+          />
+          <ProjectBox pic={graphPic} projectName="Sport See" stack="React js" />
         </div>
       </div>
     </div>
