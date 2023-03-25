@@ -3,7 +3,10 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="  w-full md:h-screen p-2 flex items-center py-16">
+    <div
+      id="about"
+      className="  w-full md:h-screen p-2 flex items-center py-16"
+    >
       <div className=" max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <p className=" text-blue-400 uppercase tracking-widest font-bold">
@@ -31,9 +34,9 @@ const About = () => {
             Mes Projets
           </p>
         </div>
-        <div className=" h-[300px] self-center shadow-xl shadow-gray-500 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in-out duration-300">
+        <div className=" w-auto h-[300px] self-center shadow-xl shadow-gray-500 rounded-xl flex items-center justify-center hover:scale-105 ease-in-out duration-300">
           <img
-            className=" max-w-md:mt-8 rounded-xl"
+            className=" max-w-md:mt-8 rounded-xl h-[300px] "
             src="../assets/ordi.jpg"
             alt="ordi pic"
           />

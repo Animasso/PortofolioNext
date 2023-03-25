@@ -2,11 +2,10 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-
 import Link from "next/link";
 const Contact = () => {
   return (
-    <div className=" w-full lg:h-screen ">
+    <div id="contact" className=" w-full lg:h-screen ">
       <div className=" max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className=" text-blue-400 uppercase tracking-widest font-bold ">
           Contact

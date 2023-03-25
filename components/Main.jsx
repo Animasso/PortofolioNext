@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 export default function Main() {
   return (
-    <div className="w-full h-screen text-center">
+    <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <div className="sansFont mt-6">
@@ -46,9 +46,12 @@ export default function Main() {
             >
               <FaLinkedinIn />
             </Link>
-            <div className=" rounded-full hover:rounded-2xl transition shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-300 scal">
+            <Link
+              href="https://github.com/Animasso"
+              className=" rounded-full hover:rounded-2xl transition shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-300 scal"
+            >
               <FaGithub />
-            </div>
+            </Link>
             <div className=" rounded-full hover:rounded-2xl transition shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-300">
               <BsFillPersonLinesFill />
             </div>

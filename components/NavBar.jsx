@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
@@ -7,12 +7,30 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { motion } from "framer-motion";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
   const handleNav = () => {
     setNav(!nav);
   };
+
   const [rotate, setRotate] = useState(false);
   return (
-    <div className="  fixed w-full shadow-2xl z-[100] bg-white">
+    <div
+      className={
+        shadow
+          ? "fixed w-full shadow-2xl z-[100] md:opacity-80 bg-white"
+          : "fixed w-full z-[100] bg-white"
+      }
+    >
       <div className=" flex justify-between items-center w-full h-full 2xl:px-16">
         <Image
           src="/../public/assets/logoAsid.png"
@@ -31,28 +49,45 @@ const NavBar = () => {
                 Home
               </motion.li>
             </Link>
-            <Link href="/">
+            <Link href="/#about">
               <motion.li
-                drag
+                onClick={() => setRotate(!rotate)}
+                animate={{ rotate: rotate ? 360 : 0 }}
+                transition={{ type: "tween", duration: 1 }}
                 className="ml-10 text-sm uppercase hover:border-b  border-blue-900"
               >
                 A propos
               </motion.li>
             </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b  border-blue-900">
+            <Link href="/#techno">
+              <motion.li
+                onClick={() => setRotate(!rotate)}
+                animate={{ rotate: rotate ? 360 : 0 }}
+                transition={{ type: "tween", duration: 1 }}
+                className="ml-10 text-sm uppercase hover:border-b  border-blue-900"
+              >
                 Techno
-              </li>
+              </motion.li>
             </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b  border-blue-900">
+            <Link href="/#projets">
+              <motion.li
+                onClick={() => setRotate(!rotate)}
+                animate={{ rotate: rotate ? 360 : 0 }}
+                transition={{ type: "tween", duration: 1 }}
+                className="ml-10 text-sm uppercase hover:border-b  border-blue-900"
+              >
                 Projets
-              </li>
+              </motion.li>
             </Link>
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b  border-blue-900">
+            <Link href="/#contact">
+              <motion.li
+                onClick={() => setRotate(!rotate)}
+                animate={{ rotate: rotate ? 360 : 0 }}
+                transition={{ type: "tween", duration: 1 }}
+                className="ml-10 text-sm uppercase hover:border-b  border-blue-900"
+              >
                 Contact
-              </li>
+              </motion.li>
             </Link>
           </ul>
 
@@ -96,27 +131,42 @@ const NavBar = () => {
           <div>
             <ul className=" py-4 flex flex-col font-semibold">
               <Link href="/">
-                <li className="py-4 text-sm uppercase hover:text-base ease-in-out duration-500">
+                <li
+                  onClick={() => setNav(!nav)}
+                  className="py-4 text-sm uppercase hover:text-base ease-in-out duration-500"
+                >
                   Home
                 </li>
               </Link>
-              <Link href="/">
-                <li className="py-4  text-sm uppercase hover:text-base ease-in-out duration-500">
+              <Link href="/#about">
+                <li
+                  onClick={() => setNav(!nav)}
+                  className="py-4  text-sm uppercase hover:text-base ease-in-out duration-500"
+                >
                   A propos
                 </li>
               </Link>
-              <Link href="/">
-                <li className="py-4 text-sm uppercase hover:text-base ease-in-out duration-500">
+              <Link href="/#techno">
+                <li
+                  onClick={() => setNav(!nav)}
+                  className="py-4 text-sm uppercase hover:text-base ease-in-out duration-500"
+                >
                   Techno
                 </li>
               </Link>
-              <Link href="/">
-                <li className="py-4  text-sm uppercase hover:text-base ease-in-out duration-500">
+              <Link href="/#projets">
+                <li
+                  onClick={() => setNav(!nav)}
+                  className="py-4  text-sm uppercase hover:text-base ease-in-out duration-500"
+                >
                   Projet
                 </li>
               </Link>
-              <Link href="/">
-                <li className="py-4  text-sm uppercase hover:text-base ease-in-out duration-500">
+              <Link href="/#contact">
+                <li
+                  onClick={() => setNav(!nav)}
+                  className="py-4  text-sm uppercase hover:text-base ease-in-out duration-500"
+                >
                   Contact
                 </li>
               </Link>
@@ -126,18 +176,30 @@ const NavBar = () => {
                 OpenToWork
               </p>
               <div className=" flex items-center justify-between my-4 w-full sm:[80%]">
-                <div className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-300">
+                <Link
+                  href="https://www.linkedin.com/in/animasso-sidib%C3%A9/"
+                  className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                >
                   <FaLinkedinIn />
-                </div>
-                <div className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-300">
+                </Link>
+                <Link
+                  href="https://github.com/Animasso"
+                  className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                >
                   <FaGithub />
-                </div>
-                <div className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-300">
+                </Link>
+                <Link
+                  href=""
+                  className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                >
                   <BsFillPersonLinesFill />
-                </div>
-                <div className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-300">
+                </Link>
+                <Link
+                  href=""
+                  className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-300"
+                >
                   <AiOutlineMail />
-                </div>
+                </Link>
               </div>
             </div>
           </div>

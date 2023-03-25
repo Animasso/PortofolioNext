@@ -7,7 +7,7 @@ import ProjectBox from "./ProjectBox";
 graphPic;
 const Projects = () => {
   return (
-    <div className=" w-full">
+    <div id="projets" className=" w-full">
       <div className=" max-w-[1240px] mx-auto p-2 py-16">
         <p className=" text-blue-400 uppercase tracking-widest font-bold">
           Projets
@@ -18,21 +18,34 @@ const Projects = () => {
             pic={marvelPic}
             projectName="Marvel Quizz"
             stack="React js"
-            projectUrl="https://marvelprojet-56a90.firebaseapp.com/"
+            projectUrl="/marvelProject"
+            // projectUrl="https://marvelprojet-56a90.firebaseapp.com/"
           />
-          <ProjectBox pic={hrPic} projectName="Hrnet" stack="React js" />
+          <ProjectBox
+            pic={hrPic}
+            projectName="Hrnet"
+            stack="React js"
+            projectUrl="/hrNetProject"
+          />
           <ProjectBox
             pic={bankPic}
             projectName="Argent Bank"
             stack="React js"
+            projectUrl="/argentBank"
           />
           <ProjectBox
             pic={learnPic}
             projectName="Learn@Home"
             stack="Figma"
-            projectUrl="https://www.figma.com/file/xZQYu7fA1aiQIeENJeRXDv/Learn%40Home?node-id=0-1&t=rk8Uv54f5ROibuFT-0"
+            projectUrl="/learnHome"
+            // projectUrl="https://www.figma.com/file/xZQYu7fA1aiQIeENJeRXDv/Learn%40Home?node-id=0-1&t=rk8Uv54f5ROibuFT-0"
           />
-          <ProjectBox pic={graphPic} projectName="Sport See" stack="React js" />
+          <ProjectBox
+            pic={graphPic}
+            projectName="Sport See"
+            stack="React js"
+            projectUrl="/sportSee"
+          />
         </div>
       </div>
     </div>
