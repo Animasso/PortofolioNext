@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 const ProjectBox = ({ pic, projectName, stack, projectUrl }) => {
   return (
-    <div className=" relative flex  justify-center h-auto w-full shadow-xl shadow-gray-500 rounded-xl group hover:bg-gradient-to-r from-emerald-200 to- bg-emerald-600">
+    <div className=" relative flex  min-h-[250px] justify-center lg:min-h-[410px] h-auto w-full shadow-xl shadow-gray-500 rounded-xl group hover:bg-gradient-to-r from-emerald-200 to- bg-emerald-600">
       <Image
         className="  rounded-xl group-hover:opacity-10 object-fill"
         src={pic}

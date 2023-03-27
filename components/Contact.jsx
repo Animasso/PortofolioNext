@@ -2,8 +2,13 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import { useForm, ValidationError } from "@formspree/react";
 import Link from "next/link";
 const Contact = () => {
+  const [state, handleSubmit] = useForm("meqwlnno");
+  if (state.succeeded) {
+    return <p>Formulaire envoyé !!</p>;
+  }
   return (
     <div id="contact" className=" w-full lg:h-screen ">
       <div className=" max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -50,47 +55,72 @@ const Contact = () => {
           </div>
           <div className=" col-span-3 w-full h-auto shadow-xl shadow-gray-500 rounded-xl lg:pt-4 ">
             <div className="p-4">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className=" grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className=" flex flex-col">
-                    <label className=" uppercase text-sm py-2">Nom</label>
+                    <label htmlFor="nom" className=" uppercase text-sm py-2">
+                      Nom
+                    </label>
                     <input
+                      id="nom"
+                      name="nom"
                       type="text"
                       className=" border-2 rounded-lg p-3 flex border-gray-300 shadow-lg"
                     />
+                    <ValidationError
+                      prefix="nom"
+                      field="nom"
+                      errors={state.errors}
+                    />
                   </div>
                   <div className=" flex flex-col">
-                    <label className=" uppercase text-sm py-2">
+                    <label htmlFor="numero" className=" uppercase text-sm py-2">
                       Numéro de télephone
                     </label>
                     <input
+                      id="numero"
+                      name="numero"
                       type="text"
                       className=" border-2 rounded-lg p-3 flex border-gray-300 shadow-lg"
                     />
                   </div>
                 </div>
                 <div className=" flex flex-col py-2">
-                  <label className=" uppercase text-sm py-2">Email</label>
+                  <label htmlFor="email" className=" uppercase text-sm py-2">
+                    Email
+                  </label>
                   <input
+                    id="email"
+                    name="email"
                     type="email"
                     className=" border-2 rounded-lg p-3 flex border-gray-300 shadow-lg"
                   />
                 </div>
                 <div className=" flex flex-col py-2">
-                  <label className=" uppercase text-sm py-2">Sujet</label>
+                  <label htmlFor="sujet" className=" uppercase text-sm py-2">
+                    Sujet
+                  </label>
                   <input
+                    id="sujet"
+                    name="sujet"
                     type="text"
                     className=" border-2 rounded-lg p-3 flex border-gray-300 shadow-lg"
                   />
                 </div>
                 <div className=" flex flex-col py-2">
-                  <label className=" uppercase text-sm py-2">Message</label>
+                  <label htmlFor="message" className=" uppercase text-sm py-2">
+                    Message
+                  </label>
                   <textarea
+                    id="message"
+                    name="message"
                     className=" border-2 rounded-lg p-3 border-gray-300 shadow-lg"
                     rows="10"
                   ></textarea>
                 </div>
-                <button className=" w-full p-4 mt-4 ">Envoyer</button>
+                <button type="submit" className=" w-full p-4 mt-4 ">
+                  Envoyer
+                </button>
               </form>
             </div>
           </div>
