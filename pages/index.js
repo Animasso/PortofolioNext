@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Portofolio Asid||Frontend Dev</title>
+        <title>Portfolio Asid||Frontend Dev</title>
         <meta name="description" content="Portofolio Frontend Dev" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
