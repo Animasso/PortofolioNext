@@ -1,6 +1,19 @@
 import React from "react";
 import BoxSkills from "./BoxSkills";
 import htmlpic from "../public/assets/skills/html.png";
+import csspic from "../public/assets/skills/css.png";
+import javascriptpic from "../public/assets/skills/javascript.png";
+import reactpic from "../public/assets/skills/react.png";
+import githubpic from "../public/assets/skills/github1.png";
+import tailwindpic from "../public/assets/skills/tailwind.png";
+import nextpic from "../public/assets/skills/nextjs.png";
+import jestpic from "../public/assets/skills/jest.png";
+import reduxpic from "../public/assets/skills/redux.png";
+import mongopic from "../public/assets/skills/mongo.png";
+import firebasepic from "../public/assets/skills/firebase.png";
+import visualpic from "../public/assets/skills/visual.png";
+import swaggerpic from "../public/assets/skills/picswagger.png";
+import figmapic from "../public/assets/skills/figma.png";
 const Skills = () => {
   return (
     <div id="techno" className=" w-full lg:h-screen p-2">
@@ -11,55 +24,19 @@ const Skills = () => {
         <h2 className="py-4">Mes compétences</h2>
         <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <BoxSkills logoSkill={htmlpic} stack="Html" />
-          <BoxSkills logoSkill="/../public/assets/skills/css.png" stack="Css" />
-          <BoxSkills
-            logoSkill="/../public/assets/skills/github1.png"
-            stack="Github"
-          />
-          <BoxSkills
-            logoSkill="/../public/assets/skills/javascript.png"
-            stack="Javascript"
-          />
-          <BoxSkills
-            logoSkill="/../public/assets/skills/react.png"
-            stack="React"
-          />
-          <BoxSkills
-            logoSkill="/../public/assets/skills/tailwind.png"
-            stack="Tailwind"
-          />
-          <BoxSkills
-            logoSkill="/../public/assets/skills/nextjs.png"
-            stack="Next"
-          />
-          <BoxSkills
-            logoSkill="/../public/assets/skills/jest.png"
-            stack="Jest"
-          />
-          <BoxSkills
-            logoSkill="/../public/assets/skills/redux.png"
-            stack="Redux"
-          />
-          <BoxSkills
-            logoSkill="/../public/assets/skills/mongo.png"
-            stack="Mongo"
-          />
-          <BoxSkills
-            logoSkill="/../public/assets/skills/firebase.png"
-            stack="Firebase"
-          />
-          <BoxSkills
-            logoSkill="/../public/assets/skills/visual.png"
-            stack="Visual Studio"
-          />
-          <BoxSkills
-            logoSkill="/../public/assets/skills/Swagger.png"
-            stack="Swagger"
-          />
-          <BoxSkills
-            logoSkill="/../public/assets/skills/figma.png"
-            stack="Figma"
-          />
+          <BoxSkills logoSkill={csspic} stack="Css" />
+          <BoxSkills logoSkill={githubpic} stack="Github" />
+          <BoxSkills logoSkill={javascriptpic} stack="Javascript" />
+          <BoxSkills logoSkill={reactpic} stack="React" />
+          <BoxSkills logoSkill={tailwindpic} stack="Tailwind" />
+          <BoxSkills logoSkill={nextpic} stack="Next" />
+          <BoxSkills logoSkill={jestpic} stack="Jest" />
+          <BoxSkills logoSkill={reduxpic} stack="Redux" />
+          <BoxSkills logoSkill={mongopic} stack="Mongo" />
+          <BoxSkills logoSkill={firebasepic} stack="Firebase" />
+          <BoxSkills logoSkill={visualpic} stack="Visual Studio" />
+          <BoxSkills logoSkill={swaggerpic} stack="Swagger" />
+          <BoxSkills logoSkill={figmapic} stack="Figma" />
         </div>
       </div>
     </div>
