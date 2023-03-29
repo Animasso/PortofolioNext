@@ -4,6 +4,7 @@ import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import logoAsid from "../public/assets/logoAsid.png";
 import { motion } from "framer-motion";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -32,12 +33,7 @@ const NavBar = () => {
       }
     >
       <div className=" flex justify-between items-center w-full h-full 2xl:px-16">
-        <Image
-          src="/../assets/logoAsid.png"
-          alt="logo"
-          width="125"
-          height="50"
-        />
+        <Image src={logoAsid} alt="logo" width="125" height="50" />
         <div>
           <ul className="hidden md:flex mr-4">
             <Link onClick={() => setRotate(!rotate)} href="/">
