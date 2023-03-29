@@ -33,7 +33,7 @@ const NavBar = () => {
     >
       <div className=" flex justify-between items-center w-full h-full 2xl:px-16">
         <Image
-          src="/../public/assets/logoAsid.png"
+          src="/../assets/logoAsid.png"
           alt="logo"
           width="125"
           height="50"
