@@ -1,6 +1,6 @@
 import React from "react";
 import BoxSkills from "./BoxSkills";
-
+import htmlpic from "../public/assets/skills/html.png";
 const Skills = () => {
   return (
     <div id="techno" className=" w-full lg:h-screen p-2">
@@ -10,10 +10,7 @@ const Skills = () => {
         </p>
         <h2 className="py-4">Mes compétences</h2>
         <div className=" grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <BoxSkills
-            logoSkill="/../public/assets/skills/html.png"
-            stack="Html"
-          />
+          <BoxSkills logoSkill={htmlpic} stack="Html" />
           <BoxSkills logoSkill="/../public/assets/skills/css.png" stack="Css" />
           <BoxSkills
             logoSkill="/../public/assets/skills/github1.png"
