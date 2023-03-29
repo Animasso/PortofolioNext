@@ -1,6 +1,4 @@
-import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { useForm, ValidationError } from "@formspree/react";
 import Link from "next/link";
@@ -32,24 +30,25 @@ const Contact = () => {
                 <p className="py-4">Disponible dès maintenant </p>
               </div>
               <div>
-                <p className=" uppercase pt-8">Connect with me</p>
+                <p className=" uppercase pt-8 text-center text-lg font-semibold">
+                  Liens{" "}
+                </p>
               </div>
               <div className=" flex item-center justify-between py-4">
                 <Link
                   href="https://www.linkedin.com/in/animasso-sidib%C3%A9/"
+                  target="_blank"
                   className=" rounded-full hover:rounded-2xl transition shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-300"
                 >
                   <FaLinkedinIn />
                 </Link>
-                <div className=" rounded-full hover:rounded-2xl transition shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-300 ">
+                <Link
+                  href="https://github.com/Animasso"
+                  target="_blank"
+                  className=" rounded-full hover:rounded-2xl transition shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-300 "
+                >
                   <FaGithub />
-                </div>
-                <div className=" rounded-full hover:rounded-2xl transition shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-300">
-                  <BsFillPersonLinesFill />
-                </div>
-                <div className=" rounded-full hover:rounded-2xl transition shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-300">
-                  <AiOutlineMail />
-                </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -118,7 +117,10 @@ const Contact = () => {
                     rows="10"
                   ></textarea>
                 </div>
-                <button type="submit" className=" w-full p-4 mt-4 ">
+                <button
+                  type="submit"
+                  className=" w-full p-4 mt-4 shadow-xl shadow-gray-400  rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white  hover:scale-105 ease-in-out duration-300 "
+                >
                   Envoyer
                 </button>
               </form>

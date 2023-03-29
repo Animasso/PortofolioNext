@@ -14,12 +14,12 @@
   left: 0;
   top: 0;
 
-  border-left: 8px solid hsla(221, 62%, 31%, 1);
-  border-top: 8px solid hsla(221, 62%, 31%, 1);
+  border-left: 8px solid rgb(93, 120, 168);
+  border-top: 8px solid rgb(78, 91, 119);
 }
 .pseudo::after {
   right: 0;
   bottom: 0;
-  border-right: 8px solid hsla(221, 62%, 31%, 1);
-  border-bottom: 8px solid hsla(221, 62%, 31%, 1);
+  border-right: 8px solid rgb(93, 120, 168);
+  border-bottom: 8px solid rgb(78, 91, 119);
 }

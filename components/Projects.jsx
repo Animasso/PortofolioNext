@@ -3,6 +3,10 @@ import graphPic from "../public/assets/projectPic/grap.png";
 import hrPic from "../public/assets/projectPic/hr.png";
 import bankPic from "../public/assets/projectPic/bank.png";
 import learnPic from "../public/assets/projectPic/learn.png";
+import fisheyePic from "../public/assets/projectPic/Fisheye.png";
+import KasaPic from "../public/assets/projectPic/Kasa.png";
+import BilledPic from "../public/assets/projectPic/Billed.png";
+
 import ProjectBox from "./ProjectBox";
 graphPic;
 const Projects = () => {
@@ -13,7 +17,7 @@ const Projects = () => {
           Projets
         </p>
         <h2 className="py-4">Mes réalisations</h2>
-        <div className=" grid md:grid-cols-2 gap-8">
+        <div className=" grid md:grid-cols-3 gap-8">
           <ProjectBox
             pic={marvelPic}
             projectName="Marvel Quizz"
@@ -38,13 +42,30 @@ const Projects = () => {
             projectName="Learn@Home"
             stack="Figma"
             projectUrl="/learnHome"
-            // projectUrl="https://www.figma.com/file/xZQYu7fA1aiQIeENJeRXDv/Learn%40Home?node-id=0-1&t=rk8Uv54f5ROibuFT-0"
           />
           <ProjectBox
             pic={graphPic}
             projectName="Sport See"
             stack="React js"
             projectUrl="/sportSee"
+          />
+          <ProjectBox
+            pic={fisheyePic}
+            projectName="Fisheye"
+            stack="React js"
+            projectUrl="/fisheye"
+          />
+          <ProjectBox
+            pic={KasaPic}
+            projectName="Kasa"
+            stack="React js"
+            projectUrl="/kasa"
+          />
+          <ProjectBox
+            pic={BilledPic}
+            projectName="Billed"
+            stack="Jest "
+            projectUrl="/billed"
           />
         </div>
       </div>

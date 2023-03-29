@@ -1,7 +1,5 @@
 import React from "react";
-import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import styles from "../styles/Main.module.css";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
@@ -29,11 +27,11 @@ export default function Main() {
               ease: "easeIn",
             }}
           >
-            <h1 className=" py-4 text-[#2e71b8]">Developpeur FrontEnd</h1>
+            <h1 className=" py-4 text-[#2e71b8]">Développeur FrontEnd</h1>
             <p className="py-4 text-gray-700 max-w-[70%] m-auto">
-              Développeur web passionné d'informatique j'aime créer et découvrir
-              de nouvelles technologie et méthode afin de confectionner de
-              belles interfaces{" "}
+              Développeur web passionné d'informatique J'aime créer et découvrir
+              de nouvelles technologies et méthodes dans le but de construire de
+              belles interfaces.
             </p>
           </motion.div>
           <motion.div
@@ -42,22 +40,18 @@ export default function Main() {
           >
             <Link
               href="https://www.linkedin.com/in/animasso-sidib%C3%A9/"
+              target="_blank"
               className=" rounded-full hover:rounded-2xl transition shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-300"
             >
               <FaLinkedinIn />
             </Link>
             <Link
               href="https://github.com/Animasso"
+              target="_blank"
               className=" rounded-full hover:rounded-2xl transition shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-300 scal"
             >
               <FaGithub />
             </Link>
-            <div className=" rounded-full hover:rounded-2xl transition shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-300">
-              <BsFillPersonLinesFill />
-            </div>
-            <div className=" rounded-full hover:rounded-2xl transition shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in-out duration-300">
-              <AiOutlineMail />
-            </div>
           </motion.div>
         </div>
       </div>

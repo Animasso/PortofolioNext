@@ -8,25 +8,16 @@ const argentBank = () => {
       <ProjectDetail
         projetImage={argentPic}
         projetTitle="Argent Bank"
-        projetStructure=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-        cumque magni quibusdam dolorum officiis saepe aspernatur minima
-        exercitationem, maxime laudantium similique dolor? Nesciunt
-        accusamus facere recusandae ab neque temporibus, ipsam veniam
-        consectetur! Aspernatur non expedita quod perferendis! Libero
-        delectus saepe suscipit possimus porro quia repudiandae, ducimus
-        numquam sunt reiciendis earum iste rem ex laborum magni velit,
-        accusamus modi blanditiis voluptatibus! Pariatur incidunt recusandae
-        nam sunt veritatis exercitationem nostrum excepturi! Culpa ipsa illo
-        blanditiis officia numquam, voluptas cupiditate odit ab veritatis
-        dolor, nostrum doloremque tempora magni, sequi officiis ea
-        asperiores earum! Eos quibusdam vitae voluptas ipsum voluptatem
-        aliquam quo magni molestiae?"
+        projetStructure=" Création d'une application web complète et responsive avec React, contenant une page d'accueil, la page de connexion et la page de profil, ces élements permettent aux clients de se connecter et de gérer leurs comptes et leur profil.
+        Utilisation de Redux pour gérer le state de l'ensemble de l'application.
+        Rédaction d'un document Swagger pour servir de feuille de route pour la modélisation des endpoints coté Back-end "
         projetTech=" React.js/Redux Toolkit/
         Javascript/Swagger"
         projetLink="https://marvelprojet-56a90.firebaseapp.com/"
         projetGit="https://github.com/Animasso/Animasso_Sidibe_13_23102022"
+        techList={["React", "Redux", "Swagger", "Postman"]}
       />
-    </div>
+    </div> //
   );
 };
 

@@ -1,13 +1,13 @@
 import React from "react";
 import ProjectDetail from "@/components/ProjectDetail";
-import hrPic from "../public/assets/projectPic/hr.png";
-import TechLines from "@/components/TechLines";
-const hrNetProject = () => {
+import fishEyePic from "../public/assets/projectPic/fisheye.png";
+
+const fishEye = () => {
   return (
     <div className=" w-full">
       <ProjectDetail
-        projetImage={hrPic}
-        projetTitle="HrNet"
+        projetImage={fishEyePic}
+        projetTitle="FishEye"
         projetStructure=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
         cumque magni quibusdam dolorum officiis saepe aspernatur minima
         exercitationem, maxime laudantium similique dolor? Nesciunt
@@ -21,13 +21,13 @@ const hrNetProject = () => {
         dolor, nostrum doloremque tempora magni, sequi officiis ea
         asperiores earum! Eos quibusdam vitae voluptas ipsum voluptatem
         aliquam quo magni molestiae?"
-        projetTech=" React.js/Javascript/Tailwind/Material Ui/Création d'une librairie npm/React-table"
-        projetLink="https://animasso-sidibe-14-112022-2lgzq5twy-animasso.vercel.app/"
-        projetGit="https://github.com/Animasso/Animasso_sidibe_14_112022"
-        techList={["Javascript", "React", "tailwind", "react-table"]}
+        projetTech=" Javascript"
+        projetLink="https://animasso.github.io/AnimassoSidibe_6_070320202/"
+        projetGit="https://github.com/Animasso/AnimassoSidibe_6_070320202"
+        techList={["Javascript"]}
       />
     </div>
   );
 };
 
-export default hrNetProject;
+export default fishEye;
