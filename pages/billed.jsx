@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectDetail from "@/components/ProjectDetail";
-import BilledPic from "../public/assets/projectPic/billed.png";
+import BilledPic from "../public/assets/projectPic/picbilled.png";
 
 const billed = () => {
   return (

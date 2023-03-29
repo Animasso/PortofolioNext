@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectDetail from "@/components/ProjectDetail";
-import fishEyePic from "../public/assets/projectPic/fisheye.png";
+import fishEyePic from "../public/assets/projectPic/picfisheye.png";
 
 const fishEye = () => {
   return (

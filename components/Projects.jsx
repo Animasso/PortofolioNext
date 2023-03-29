@@ -3,9 +3,9 @@ import graphPic from "../public/assets/projectPic/grap.png";
 import hrPic from "../public/assets/projectPic/hr.png";
 import bankPic from "../public/assets/projectPic/bank.png";
 import learnPic from "../public/assets/projectPic/learn.png";
-import fisheyePic from "../public/assets/projectPic/fisheye.png";
-import KasaPic from "../public/assets/projectPic/kasa.png";
-import BilledPic from "../public/assets/projectPic/billed.png";
+import fisheyePic from "../public/assets/projectPic/picfisheye.png";
+import KasaPic from "../public/assets/projectPic/pickasa.png";
+import BilledPic from "../public/assets/projectPic/picbilled.png";
 
 import ProjectBox from "./ProjectBox";
 graphPic;

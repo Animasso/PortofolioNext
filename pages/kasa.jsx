@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectDetail from "@/components/ProjectDetail";
-import kasaPic from "../public/assets/projectPic/kasa.png";
+import kasaPic from "../public/assets/projectPic/pickasa.png";
 
 const kasa = () => {
   return (
