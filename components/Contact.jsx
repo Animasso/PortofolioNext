@@ -1,6 +1,7 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { useForm, ValidationError } from "@formspree/react";
+import Image from "next/image";
 import Link from "next/link";
 const Contact = () => {
   const [state, handleSubmit] = useForm("meqwlnno");
@@ -18,10 +19,12 @@ const Contact = () => {
           <div className=" col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4">
             <div className="lg:p-4 h-full">
               <div>
-                <img
+                <Image
                   className=" rounded-xl hover:scale-105 ease-in-out duration-300"
-                  src="../assets/contact.png"
+                  src="/../public/assets/contact.png"
                   alt="contact"
+                  width="400"
+                  height="300"
                 />
               </div>
               <div>
