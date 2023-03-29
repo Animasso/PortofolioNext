@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { useForm, ValidationError } from "@formspree/react";
-import contactpic from "../public/assets/contact.png";
+import contactpic from "../public/assets/contact.png"; //
 import Image from "next/image";
 import Link from "next/link";
 const Contact = () => {
