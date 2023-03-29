@@ -43,8 +43,8 @@ const ProjectDetail = ({
           <div className="p-2">
             <p className=" text-center font-bold pb-2">Technologies</p>
             <div>
-              {techList.map((oneTech) => {
-                return <TechLines tech={oneTech} />;
+              {techList.map((oneTech, i) => {
+                return <TechLines key={i} tech={oneTech} />;
               })}
             </div>
           </div>

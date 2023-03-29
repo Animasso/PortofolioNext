@@ -15,7 +15,7 @@ const ProjectBox = ({ pic, projectName, stack, projectUrl }) => {
         <Link href={`${projectUrl}`}>
           {" "}
           <p className=" text-center py-3 rounded-lg bg-white  text-gray-700 font-bold text-lg cursor-pointer">
-            Plus d'info
+            Plus d&apos;info
           </p>
         </Link>
       </div>
