@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectDetail from "@/components/ProjectDetail";
 import hrPic from "../public/assets/projectPic/hr.png";
-import TechLines from "@/components/TechLines";
+
 const hrNetProject = () => {
   return (
     <div className=" w-full">
