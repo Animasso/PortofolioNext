@@ -8,7 +8,6 @@ import KasaPic from "../public/assets/projectPic/pickasa.png";
 import BilledPic from "../public/assets/projectPic/picbilled.png";
 
 import ProjectBox from "./ProjectBox";
-graphPic;
 const Projects = () => {
   return (
     <div id="projets" className=" w-full">
@@ -23,7 +22,6 @@ const Projects = () => {
             projectName="Marvel Quizz"
             stack="React js"
             projectUrl="/marvelProject"
-            // projectUrl="https://marvelprojet-56a90.firebaseapp.com/"
           />
           <ProjectBox
             pic={hrPic}

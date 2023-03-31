@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import TechLines from "@/components/TechLines";
+import { motion } from "framer-motion";
 const ProjectDetail = ({
   projetImage,
   projetTitle,
@@ -39,14 +40,24 @@ const ProjectDetail = ({
             <button className=" px-8 py-2 mt-4 mr-8">Code</button>
           </Link>
         </div>
-        <div className=" col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
+        <div
+          className=" col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4"
+          // data-aos="fade-left"
+        >
           <div className="p-2">
             <p className=" text-center font-bold pb-2">Technologies</p>
-            <div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 2,
+                ease: "easeIn",
+              }}
+            >
               {techList.map((oneTech, i) => {
                 return <TechLines key={i} tech={oneTech} />;
               })}
-            </div>
+            </motion.div>
           </div>
         </div>
         <Link href="/#projets">

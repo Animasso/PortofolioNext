@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import { useForm, ValidationError } from "@formspree/react";
-import contactpic from "../public/assets/contact.png"; //
+import contactpic from "../public/assets/contact.jpg";
 import Image from "next/image";
 import Link from "next/link";
 const Contact = () => {
@@ -24,8 +24,8 @@ const Contact = () => {
                   className=" rounded-xl hover:scale-105 ease-in-out duration-300"
                   src={contactpic}
                   alt="contact"
-                  width="400"
-                  height="300"
+                  width="auto"
+                  height="auto"
                 />
               </div>
               <div>
