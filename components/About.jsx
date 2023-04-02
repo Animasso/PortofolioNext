@@ -35,9 +35,6 @@ const About = () => {
             essentiel pour un bon travail en équipe lors de la création
             d&apos;un projet en entreprise.
           </p>
-          <p className="py-2 cursor-pointer text-gray-600 underline">
-            Mes Projets
-          </p>
         </div>
         <div className=" w-auto h-[300px] self-center shadow-xl shadow-gray-500 rounded-xl flex items-center justify-center hover:scale-105 ease-in-out duration-300">
           <img

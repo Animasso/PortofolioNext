@@ -4,11 +4,25 @@ import { useForm, ValidationError } from "@formspree/react";
 import contactpic from "../public/assets/contact.jpg";
 import Image from "next/image";
 import Link from "next/link";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const [state, handleSubmit] = useForm("meqwlnno");
-  if (state.succeeded) {
-    return <p>Formulaire envoyé !!</p>;
-  }
+  const notify = () => {
+    if (state.succeeded) {
+      toast.success("Formulaire envoyé", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+      });
+      document.getElementById("myform").reset();
+    }
+  };
   return (
     <div id="contact" className=" w-full lg:h-screen ">
       <div className=" max-w-[1240px] m-auto px-2 py-16 w-full">
@@ -58,7 +72,7 @@ const Contact = () => {
           </div>
           <div className=" col-span-3 w-full h-auto shadow-xl shadow-gray-500 rounded-xl lg:pt-4 ">
             <div className="p-4">
-              <form onSubmit={handleSubmit}>
+              <form id="myform" onSubmit={handleSubmit}>
                 <div className=" grid md:grid-cols-2 gap-4 w-full py-2">
                   <div className=" flex flex-col">
                     <label htmlFor="nom" className=" uppercase text-sm py-2">
@@ -77,12 +91,12 @@ const Contact = () => {
                     />
                   </div>
                   <div className=" flex flex-col">
-                    <label htmlFor="numero" className=" uppercase text-sm py-2">
-                      Numéro de télephone
+                    <label htmlFor="prenom" className=" uppercase text-sm py-2">
+                      Prénom
                     </label>
                     <input
-                      id="numero"
-                      name="numero"
+                      id="prenom"
+                      name="prenom"
                       type="text"
                       className=" border-2 rounded-lg p-3 flex border-gray-300 shadow-lg"
                     />
@@ -122,12 +136,25 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <button
+                  onClick={notify}
                   type="submit"
                   className=" w-full p-4 mt-4 shadow-xl shadow-gray-400  rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white  hover:scale-105 ease-in-out duration-300 "
                 >
                   Envoyer
                 </button>
               </form>
+              <ToastContainer
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="colored"
+              />
             </div>
           </div>
         </div>
