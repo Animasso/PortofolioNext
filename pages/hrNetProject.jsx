@@ -8,23 +8,13 @@ const hrNetProject = () => {
       <ProjectDetail
         projetImage={hrPic}
         projetTitle="HrNet"
-        projetStructure=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-        cumque magni quibusdam dolorum officiis saepe aspernatur minima
-        exercitationem, maxime laudantium similique dolor? Nesciunt
-        accusamus facere recusandae ab neque temporibus, ipsam veniam
-        consectetur! Aspernatur non expedita quod perferendis! Libero
-        delectus saepe suscipit possimus porro quia repudiandae, ducimus
-        numquam sunt reiciendis earum iste rem ex laborum magni velit,
-        accusamus modi blanditiis voluptatibus! Pariatur incidunt recusandae
-        nam sunt veritatis exercitationem nostrum excepturi! Culpa ipsa illo
-        blanditiis officia numquam, voluptas cupiditate odit ab veritatis
-        dolor, nostrum doloremque tempora magni, sequi officiis ea
-        asperiores earum! Eos quibusdam vitae voluptas ipsum voluptatem
-        aliquam quo magni molestiae?"
+        projetStructure="Refonte d'une ancienne en React application qui utilisé jQuery côté front end, ce qui entraîné des bugs considérables et une augmentation des plaintes en interne. 
+        Ajoute d'un système de gestion d'état (la version précedente utilisé un stockage local).
+        Création d'un plugin d'une fenetre modal npm "
         projetTech=" React.js/Javascript/Tailwind/Material Ui/Création d'une librairie npm/React-table"
         projetLink="https://animasso-sidibe-14-112022-2lgzq5twy-animasso.vercel.app/"
         projetGit="https://github.com/Animasso/Animasso_sidibe_14_112022"
-        techList={["Javascript", "React", "tailwind", "react-table"]}
+        techList={["Javascript", "React", "Redux", "tailwind", "react-table"]}
       />
     </div>
   );
