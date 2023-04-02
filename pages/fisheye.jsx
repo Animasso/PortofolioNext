@@ -1,14 +1,22 @@
 import React from "react";
 import ProjectDetail from "@/components/ProjectDetail";
 import fishEyePic from "../public/assets/projectPic/picfisheye.png";
-
+import Head from "next/head";
 const fishEye = () => {
   return (
-    <div className=" w-full">
-      <ProjectDetail
-        projetImage={fishEyePic}
-        projetTitle="FishEye"
-        projetStructure=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
+    <>
+      <Head>
+        <title>Projet Fisheye</title>
+        <meta name="description" content="Projet Fisheye" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+
+      <div className=" w-full">
+        <ProjectDetail
+          projetImage={fishEyePic}
+          projetTitle="FishEye"
+          projetStructure=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
         cumque magni quibusdam dolorum officiis saepe aspernatur minima
         exercitationem, maxime laudantium similique dolor? Nesciunt
         accusamus facere recusandae ab neque temporibus, ipsam veniam
@@ -21,12 +29,13 @@ const fishEye = () => {
         dolor, nostrum doloremque tempora magni, sequi officiis ea
         asperiores earum! Eos quibusdam vitae voluptas ipsum voluptatem
         aliquam quo magni molestiae?"
-        projetTech=" Javascript"
-        projetLink="https://animasso.github.io/AnimassoSidibe_6_070320202/"
-        projetGit="https://github.com/Animasso/AnimassoSidibe_6_070320202"
-        techList={["Javascript"]}
-      />
-    </div>
+          projetTech=" Javascript"
+          projetLink="https://animasso.github.io/AnimassoSidibe_6_070320202/"
+          projetGit="https://github.com/Animasso/AnimassoSidibe_6_070320202"
+          techList={["Javascript"]}
+        />
+      </div>
+    </>
   );
 };
 
