@@ -15,9 +15,7 @@ const hrNetProject = () => {
         <ProjectDetail
           projetImage={hrPic}
           projetTitle="HrNet"
-          projetStructure="Refonte d'une ancienne en React application qui utilisé jQuery côté front end, ce qui entraîné des bugs considérables et une augmentation des plaintes en interne. 
-        Ajoute d'un système de gestion d'état (la version précedente utilisé un stockage local).
-        Création d'un plugin d'une fenetre modal npm "
+          projetStructure="Refonte d'une ancienne en React application qui utilisait jQuery côté front end, ce qui entraînait des bugs considérables et une augmentation des plaintes en interne. Ajoute d'un système de gestion d'état (la version précédente utilisée un stockage local). Création d'un plugin d'une fenêtre modal npm"
           projetTech=" React.js/Javascript/Tailwind/Material Ui/Création d'une librairie npm/React-table"
           projetLink="https://animasso-sidibe-14-112022-2lgzq5twy-animasso.vercel.app/"
           projetGit="https://github.com/Animasso/Animasso_sidibe_14_112022"

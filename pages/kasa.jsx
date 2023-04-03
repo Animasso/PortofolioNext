@@ -16,7 +16,7 @@ const kasa = () => {
         <ProjectDetail
           projetImage={kasaPic}
           projetTitle="Kasa"
-          projetStructure="Création de location d'appartements d'un site avec React avec différents composants,développer les routes avec React Router (landing page,gallerie individuelle avec les photos de l'appartement) "
+          projetStructure="Création de location d'appartements d'un site avec React avec différents composants,développement des routes avec React Router (landing page,gallerie individuelle avec les photos de l'appartement) "
           projetTech=" React / Javascript"
           projetLink="https://animasso-sidibe-11-25082022.vercel.app/"
           projetGit="https://github.com/Animasso/Animasso_Sidibe_11_25082022"
