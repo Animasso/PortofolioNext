@@ -15,23 +15,17 @@ function learnHome(props) {
         <ProjectDetail
           projetImage={learnPic}
           projetTitle="Learn@Home"
-          projetStructure=" Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora
-      cumque magni quibusdam dolorum officiis saepe aspernatur minima
-      exercitationem, maxime laudantium similique dolor? Nesciunt
-      accusamus facere recusandae ab neque temporibus, ipsam veniam
-      consectetur! Aspernatur non expedita quod perferendis! Libero
-      delectus saepe suscipit possimus porro quia repudiandae, ducimus
-      numquam sunt reiciendis earum iste rem ex laborum magni velit,
-      accusamus modi blanditiis voluptatibus! Pariatur incidunt recusandae
-      nam sunt veritatis exercitationem nostrum excepturi! Culpa ipsa illo
-      blanditiis officia numquam, voluptas cupiditate odit ab veritatis
-      dolor, nostrum doloremque tempora magni, sequi officiis ea
-      asperiores earum! Eos quibusdam vitae voluptas ipsum voluptatem
-      aliquam quo magni molestiae?"
-          projetTech=" Figma/Notion/Création de User Stories/Diagrammes de cas d’usage."
+          projetStructure="Création d'une maquette avec Figma pour un site de soutien scolaire, mise en place de diagrammes de cas d'usage pour chacune des fonctionnalités majeures de chaque page (connexion, chat, calendrier, gestionnaire de tâches, tableau de bord).
+          Rédaction de user stories avec critères d'acceptation pour chacune des fonctionnalités,utilisation de Kanban découpant le projet, de manière macro (détails techniques exclus) en blocs de fonctionnalités et sous-fonctionnalités pour le développement."
+          projetTech=" Figma/Notion/Création de User Stories/Diagrammes de cas d'usage."
           projetLink="https://www.figma.com/file/xZQYu7fA1aiQIeENJeRXDv/Learn%40Home?node-id=0-1&t=3kXH3PXc3hTp7cG7-0"
           projetGit=""
-          techList={["Figma", "Notion"]}
+          techList={[
+            "Figma",
+            "Notion",
+            "User Stories",
+            "Diagramme de cas d'usage",
+          ]}
         />
       </div>
     </>

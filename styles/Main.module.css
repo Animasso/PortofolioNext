@@ -6,20 +6,24 @@
 .pseudo::before,
 .pseudo::after {
   position: absolute;
-  width: 50px;
-  height: 40px;
+  width: 100px;
+  height: 60px;
   content: "";
 }
 .pseudo::before {
   left: 0;
   top: 0;
-
-  border-left: 8px solid rgb(93, 120, 168);
-  border-top: 8px solid rgb(78, 91, 119);
+  border-left: 8px solid rgb(17, 185, 251);
+  border-top: 8px solid rgb(39, 86, 104);
 }
 .pseudo::after {
   right: 0;
   bottom: 0;
-  border-right: 8px solid rgb(93, 120, 168);
-  border-bottom: 8px solid rgb(78, 91, 119);
+  border-right: 8px solid rgb(17, 185, 251);
+  border-bottom: 8px solid rgb(39, 86, 104);
+}
+.background-lax {
+  background-image: url("../public/assets/sky.jpg");
+  background-position: bottom;
+  background-size: cover;
 }
