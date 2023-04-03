@@ -10,13 +10,12 @@ const ProjectBox = ({ pic, projectName, stack, projectUrl }) => {
         duration: 2,
         ease: "easeIn",
       }}
-      className=" relative flex  min-h-[150px] justify-center lg:min-h-[310px] h-auto w-full shadow-xl shadow-gray-500 rounded-xl group hover:bg-gradient-to-r from-white to-  bg-slate-300"
+      className=" relative md:min md:max-[300px] flex  min-h-[150px] justify-center lg:min-h-[310px] h-auto w-full shadow-xl shadow-gray-500 rounded-xl group hover:bg-gradient-to-r from-white to- bg-slate-300"
     >
       <Image
         className="  rounded-xl group-hover:opacity-10 "
         src={pic}
         alt={projectName}
-        fill="true"
       />
       <div className=" hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
         <h3 className=" text-2xl text-blue-600/95 tracking-widest">
