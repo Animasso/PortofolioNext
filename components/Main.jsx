@@ -12,7 +12,7 @@ export default function Main() {
           <div className="sansFont mt-6">
             <span
               id="text"
-              className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400  text-transparent bg-clip-text "
+              className="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400  text-transparent bg-clip-text font-[Ralway] "
             >
               <Typewriter words={["Animasso Sidibé"]} typeSpeed={120} />
             </span>
