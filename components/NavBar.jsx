@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import logoAsid from "../public/assets/logoAsid.png";
 import { motion } from "framer-motion";
 const NavBar = () => {
@@ -105,12 +104,7 @@ const NavBar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Image
-                src="/../public/assets/logoAsid.png"
-                alt="logo"
-                width="85"
-                height="35"
-              />
+              <Image src={logoAsid} alt="logo" width="85" height="35" />
               <div
                 onClick={handleNav}
                 className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -183,18 +177,6 @@ const NavBar = () => {
                   className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-300"
                 >
                   <FaGithub />
-                </Link>
-                <Link
-                  href=""
-                  className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-300"
-                >
-                  <BsFillPersonLinesFill />
-                </Link>
-                <Link
-                  href=""
-                  className=" rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in-out duration-300"
-                >
-                  <AiOutlineMail />
                 </Link>
               </div>
             </div>
