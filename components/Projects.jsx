@@ -6,7 +6,7 @@ import learnPic from "../public/assets/projectPic/learn.png";
 import fisheyePic from "../public/assets/projectPic/picfisheye.png";
 import KasaPic from "../public/assets/projectPic/pickasa.png";
 import BilledPic from "../public/assets/projectPic/picbilled.png";
-
+import picBlog from "../public/assets/projectPic/picBlog.png";
 import ProjectBox from "./ProjectBox";
 const Projects = () => {
   return (
@@ -15,8 +15,15 @@ const Projects = () => {
         <p className=" text-blue-400 uppercase tracking-widest font-bold">
           Projets
         </p>
+
         <h2 className="py-4">Mes réalisations</h2>
         <div className=" grid md:grid-cols-3 gap-8">
+          <ProjectBox
+            pic={picBlog}
+            projectName="Blog Photo"
+            stack="Next JS"
+            projectUrl="/photoProjet"
+          />
           <ProjectBox
             pic={marvelPic}
             projectName="Marvel Quizz"
