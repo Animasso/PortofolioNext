@@ -14,6 +14,7 @@ import firebasepic from "../public/assets/skills/firebase.png";
 import visualpic from "../public/assets/skills/visual.png";
 import swaggerpic from "../public/assets/skills/picswagger.png";
 import figmapic from "../public/assets/skills/figma.png";
+import javapic from "../public/assets/skills/javapic.png";
 const Skills = () => {
   return (
     <div id="techno" className=" w-full lg:h-screen p-2">
@@ -30,6 +31,7 @@ const Skills = () => {
           <BoxSkills logoSkill={reactpic} stack="React" />
           <BoxSkills logoSkill={tailwindpic} stack="Tailwind" />
           <BoxSkills logoSkill={nextpic} stack="Next" />
+          <BoxSkills logoSkill={javapic} stack="Java" />
           <BoxSkills logoSkill={jestpic} stack="Jest" />
           <BoxSkills logoSkill={reduxpic} stack="Redux" />
           <BoxSkills logoSkill={mongopic} stack="Mongo" />

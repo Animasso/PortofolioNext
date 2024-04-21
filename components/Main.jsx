@@ -27,7 +27,7 @@ export default function Main() {
               ease: "easeIn",
             }}
           >
-            <h1 className=" py-4 text-[#2e71b8]">Développeur FrontEnd</h1>
+            <h1 className=" py-4 text-[#2e71b8]">Développeur FullStack</h1>
             <p className="py-4 text-gray-700 max-w-[70%] m-auto">
               Développeur web passionné d&apos;informatique J&apos;aime créer et
               découvrir de nouvelles technologies et méthodes dans le but de
