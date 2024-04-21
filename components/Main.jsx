@@ -31,7 +31,7 @@ export default function Main() {
             <p className="py-4 text-gray-700 max-w-[70%] m-auto">
               Développeur web passionné d&apos;informatique J&apos;aime créer et
               découvrir de nouvelles technologies et méthodes dans le but de
-              construire de belles interfaces.
+              construire de belles interfaces..
             </p>
           </motion.div>
           <motion.div
