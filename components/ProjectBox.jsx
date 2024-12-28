@@ -13,7 +13,7 @@ const ProjectBox = ({ pic, projectName, stack, projectUrl }) => {
       className=" relative md:min md:max-[300px] flex  min-h-[150px] justify-center lg:min-h-[310px] h-auto w-full shadow-xl shadow-gray-500 rounded-xl group hover:bg-gradient-to-r from-white to- bg-slate-300"
     >
       <Image
-        className="  rounded-xl group-hover:opacity-10 "
+        className=" object-cover  rounded-xl group-hover:opacity-10 "
         src={pic}
         alt={projectName}
       />

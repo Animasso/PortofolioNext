@@ -19,7 +19,7 @@ const fishEye = () => {
           projetStructure="L'objectif est de construire un prototype fonctionnel d'un nouveau site web à partir d'une maquette que nous pourrons présenter à FishEye.
                             Le back-end ayant déjà été intégré l'implémentation du frontend fut réalisé en HTLM CSS et Javascript "
           projetTech=" Javascript"
-          projetLink="https://animasso.github.io/AnimassoSidibe_6_070320202/"
+          projetLink=""
           projetGit="https://github.com/Animasso/AnimassoSidibe_6_070320202"
           techList={["Javascript"]}
         />

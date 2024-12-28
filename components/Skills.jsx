@@ -4,6 +4,7 @@ import htmlpic from "../public/assets/skills/html.png";
 import csspic from "../public/assets/skills/css.png";
 import javascriptpic from "../public/assets/skills/javascript.png";
 import reactpic from "../public/assets/skills/react.png";
+import typeScriptPic from "../public/assets/skills/typeScript.png";
 import githubpic from "../public/assets/skills/github1.png";
 import tailwindpic from "../public/assets/skills/tailwind.png";
 import nextpic from "../public/assets/skills/nextjs.png";
@@ -28,6 +29,7 @@ const Skills = () => {
           <BoxSkills logoSkill={csspic} stack="Css" />
           <BoxSkills logoSkill={githubpic} stack="Github" />
           <BoxSkills logoSkill={javascriptpic} stack="Javascript" />
+          <BoxSkills logoSkill={typeScriptPic} stack="TypeScript" />
           <BoxSkills logoSkill={reactpic} stack="React" />
           <BoxSkills logoSkill={tailwindpic} stack="Tailwind" />
           <BoxSkills logoSkill={nextpic} stack="Next" />

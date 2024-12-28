@@ -16,7 +16,7 @@ const photoProjet = () => {
         <ProjectDetail
           projetImage={picBlog}
           projetTitle="Blog Photo"
-          projetStructure="Site vitrine pour mettre en valeur le travail personnel d'un amaateur de photographie  "
+          projetStructure="Site vitrine pour mettre en valeur le travail personnel d'un amateur de photographie  "
           projetTech=" Next JS/Tailwind"
           projetLink="https://next-photo-blog-fk4b6vsjj-animasso.vercel.app/"
           projetGit="https://github.com/Animasso/Next-photoBlog.git"

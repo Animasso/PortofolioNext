@@ -44,7 +44,7 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className=" py-2">Animasso Sidibé</h2>
-                <p>Développeur Front-end</p>
+                <p>Développeur Web</p>
                 <p className="py-4">Disponible dès maintenant </p>
               </div>
               <div>

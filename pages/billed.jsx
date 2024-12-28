@@ -18,7 +18,7 @@ const billed = () => {
           projetTitle="Billed"
           projetStructure="Le but de ce projet était de fiabiliser et d'améliorer le parcours employé de ce site web avec l'aide d'un rapport avec les bugs identifiés (Kanban Notion) . Mise en place de test avec JEST ainsi que la rédaction d'un de plan de tests End-to-End du site . "
           projetTech=" Jest / Debogger Chrome/ Rédaction d'un Plan test End-to-End"
-          projetLink="https://animasso-sidibe-9-16072022.vercel.app/"
+          projetLink=""
           projetGit="https://github.com/Animasso/AnimassoSidibe_9_16072022"
           techList={["Jest", "Debogger Chrome", "Plan test End-to-End"]}
         />
