@@ -16,8 +16,8 @@ const Movie = () => {
       <div className=" w-full">
         <ProjectDetail
           projetImage={MoviePic}
-          projetTitle="Movie search base Web"
-          projetStructure="Site d'une platforme de mentorat à distance "
+          projetTitle="Movie search base Web "
+          projetStructure="Site de recherche de film fait à partirde l'Api movieBase "
           projetTech=" React JS/Tailwind/Api/Appwrite/Framer motion"
           projetLink="https://movie-display-five.vercel.app/"
           projetGit="https://github.com/Animasso/movieDisplay"
