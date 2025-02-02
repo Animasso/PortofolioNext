@@ -24,7 +24,7 @@ const Projects = () => {
             pic={MoviePic}
             projectName="MovieTeck"
             stack="React JS Framer-motion Api Appwrite "
-            projectUrl="/learnWeb"
+            projectUrl="/Movie"
           />
           <ProjectBox
             pic={learnWeb}
