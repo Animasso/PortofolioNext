@@ -8,6 +8,7 @@ import KasaPic from "../public/assets/projectPic/pickasa.png";
 import BilledPic from "../public/assets/projectPic/picbilled.png";
 import picBlog from "../public/assets/projectPic/picBlog.png";
 import ProjectBox from "./ProjectBox";
+import MoviePic from "../public/assets/projectPic/Movie.png";
 import learnWeb from "../public/assets/projectPic/learnweb.png";
 const Projects = () => {
   return (
@@ -19,6 +20,12 @@ const Projects = () => {
 
         <h2 className="py-4">Mes réalisations</h2>
         <div className=" grid md:grid-cols-3 gap-8">
+          <ProjectBox
+            pic={MoviePic}
+            projectName="MovieTeck"
+            stack="React JS Framer-motion Api Appwrite "
+            projectUrl="/learnWeb"
+          />
           <ProjectBox
             pic={learnWeb}
             projectName="Learn From home Website"
