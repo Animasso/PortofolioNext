@@ -9,6 +9,7 @@ import BilledPic from "../public/assets/projectPic/picbilled.png";
 import picBlog from "../public/assets/projectPic/picBlog.png";
 import ProjectBox from "./ProjectBox";
 import MoviePic from "../public/assets/projectPic/Movie.png";
+import travelPic from "../public/assets/projectPic/travel.png";
 import learnWeb from "../public/assets/projectPic/learnweb.png";
 const Projects = () => {
   return (
@@ -20,6 +21,12 @@ const Projects = () => {
 
         <h2 className="py-4">Mes réalisations</h2>
         <div className=" grid md:grid-cols-3 gap-8">
+          <ProjectBox
+            pic={travelPic}
+            projectName="World Travel"
+            stack="React JS Tailwind TypeScript Framer motion Swipper "
+            projectUrl="/WorldTravel"
+          />
           <ProjectBox
             pic={MoviePic}
             projectName="MovieTeck"
