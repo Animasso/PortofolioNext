@@ -11,6 +11,7 @@ import ProjectBox from "./ProjectBox";
 import MoviePic from "../public/assets/projectPic/Movie.png";
 import travelPic from "../public/assets/projectPic/travel.png";
 import learnWeb from "../public/assets/projectPic/learnweb.png";
+import resto from "../public/assets/projectPic/Comme-au restaurant.png";
 const Projects = () => {
   return (
     <div id="projets" className=" w-full">
@@ -22,9 +23,15 @@ const Projects = () => {
         <h2 className="py-4">Mes réalisations</h2>
         <div className=" grid md:grid-cols-3 gap-8">
           <ProjectBox
+            pic={resto}
+            projectName="Comme Au Restaurant"
+            stack="React JS Tailwind  Framer-motion Swipper "
+            projectUrl="/CommeAuResto"
+          />
+          <ProjectBox
             pic={travelPic}
             projectName="World Travel"
-            stack="React JS Tailwind TypeScript Framer motion Swipper "
+            stack="React JS Tailwind TypeScript Framer-motion Swipper "
             projectUrl="/WorldTravel"
           />
           <ProjectBox
