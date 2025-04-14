@@ -11,6 +11,7 @@ import ProjectBox from "./ProjectBox";
 import MoviePic from "../public/assets/projectPic/Movie.png";
 import travelPic from "../public/assets/projectPic/travel.png";
 import learnWeb from "../public/assets/projectPic/learnweb.png";
+import FinancialPic from "../public/assets/projectPic/MyFinancial.png";
 import resto from "../public/assets/projectPic/Comme-au restaurant.png";
 const Projects = () => {
   return (
@@ -27,6 +28,12 @@ const Projects = () => {
             projectName="Comme Au Restaurant"
             stack="React JS Tailwind  Framer-motion Swipper "
             projectUrl="/CommeAuResto"
+          />
+          <ProjectBox
+            pic={FinancialPic}
+            projectName="My Financial Dashboard"
+            stack="React JS Tailwind  Framer-motion Firebase Rechart "
+            projectUrl="/MyFinancial"
           />
           <ProjectBox
             pic={travelPic}
