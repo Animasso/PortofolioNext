@@ -16,7 +16,7 @@ const MyFinancial = () => {
         <ProjectDetail
           projetImage={MyFinancialPic}
           projetTitle="My Financial Dashboard"
-          projetStructure=" Site pour garder un oeil sur le les deépenses quotidienne"
+          projetStructure=" Site pour garder un oeil sur les dépenses quotidienne"
           projetTech=" React JS/Tailwind/Framer motion/Firebase/Rechart"
           projetLink="https://dash-financial-gabz.vercel.app/"
           projetGit="https://github.com/Animasso/dashFinancial"
