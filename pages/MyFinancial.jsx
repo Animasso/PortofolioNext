@@ -18,8 +18,8 @@ const MyFinancial = () => {
           projetTitle="My Financial Dashboard"
           projetStructure=" Site pour garder un oeil sur le les deépenses quotidienne"
           projetTech=" React JS/Tailwind/Framer motion/Firebase/Rechart"
-          projetLink="https://comme-au-restaurant.vercel.app/"
-          projetGit="https://github.com/Animasso/comme-au-restaurant"
+          projetLink="https://dash-financial-gabz.vercel.app/"
+          projetGit="https://github.com/Animasso/dashFinancial"
           techList={[
             "React JS",
             "Tailwind",
