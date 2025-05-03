@@ -13,6 +13,8 @@ import travelPic from "../public/assets/projectPic/travel.png";
 import learnWeb from "../public/assets/projectPic/learnweb.png";
 import FinancialPic from "../public/assets/projectPic/MyFinancial.png";
 import resto from "../public/assets/projectPic/Comme-au restaurant.png";
+import Mugs from "../public/assets/projectPic/CreaMugPic.png";
+
 const Projects = () => {
   return (
     <div id="projets" className=" w-full">
@@ -28,6 +30,12 @@ const Projects = () => {
             projectName="Comme Au Restaurant"
             stack="React JS Tailwind  Framer-motion Swipper "
             projectUrl="/CommeAuResto"
+          />
+          <ProjectBox
+            pic={Mugs}
+            projectName="CreaMug"
+            stack="React JS Tailwind  Framer-motion "
+            projectUrl="/CreaMug"
           />
           <ProjectBox
             pic={FinancialPic}
