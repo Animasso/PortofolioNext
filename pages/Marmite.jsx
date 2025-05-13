@@ -15,7 +15,7 @@ const Marmite = () => {
       <div className=" w-full">
         <ProjectDetail
           projetImage={MarmitePic}
-          projetTitle="Comme Au Restaurant"
+          projetTitle="La Marmite Africaine"
           projetStructure="Site pour un restaurant africain "
           projetTech=" React JS/Tailwind/Framer motion/Swipper"
           projetLink="https://marmite-africaine.vercel.app/"
