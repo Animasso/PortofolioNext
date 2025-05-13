@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+
 const ProjectBox = ({ pic, projectName, stack, projectUrl }) => {
   return (
     <motion.div
@@ -10,21 +11,27 @@ const ProjectBox = ({ pic, projectName, stack, projectUrl }) => {
         duration: 2,
         ease: "easeIn",
       }}
-      className=" relative md:min md:max-[300px] flex  min-h-[150px] justify-center lg:min-h-[310px] h-auto w-full shadow-xl shadow-gray-500 rounded-xl group hover:bg-gradient-to-r from-white to- bg-slate-300"
+      className="relative flex justify-center items-center min-h-[150px] lg:min-h-[310px] w-full max-w-[400px] rounded-xl shadow-xl shadow-gray-500 group overflow-hidden"
     >
+      {/* Image visible en entier sans déformation */}
       <Image
-        className=" object-cover  rounded-xl group-hover:opacity-10 "
         src={pic}
         alt={projectName}
+        width={200}
+        height={150}
+        className="object-cover w-full h-full rounded-xl group-hover:opacity-10 transition-opacity duration-300"
       />
-      <div className=" hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <h3 className=" text-2xl text-blue-600/95 tracking-widest">
+
+      {/* Texte au hover, centré, responsive */}
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4 opacity-0 group-hover:opacity-100 transition duration-300 bg-white/0">
+        <h3 className="text-sm sm:text-base md:text-lg text-blue-600 font-semibold break-words">
           {projectName}
         </h3>
-        <p className=" pb-4 pt-2 text-blue-600/95 text-center">{stack}</p>
-        <Link href={`${projectUrl}`}>
-          {" "}
-          <p className=" text-center py-3 rounded-lg bg-blue-500  text-gray-700 font-bold text-lg cursor-pointer">
+        <p className="py-2 text-xs sm:text-sm text-blue-600 break-words">
+          {stack}
+        </p>
+        <Link href={projectUrl}>
+          <p className="py-2 px-4 bg-blue-500 rounded-lg text-gray-800 text-xs sm:text-sm md:text-base font-semibold hover:bg-blue-600">
             Plus d&apos;info
           </p>
         </Link>
@@ -32,4 +39,5 @@ const ProjectBox = ({ pic, projectName, stack, projectUrl }) => {
     </motion.div>
   );
 };
+
 export default ProjectBox;
