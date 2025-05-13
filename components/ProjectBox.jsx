@@ -13,7 +13,6 @@ const ProjectBox = ({ pic, projectName, stack, projectUrl }) => {
       }}
       className="relative flex justify-center items-center min-h-[150px] lg:min-h-[310px] w-full max-w-[400px] rounded-xl shadow-xl shadow-gray-500 group overflow-hidden"
     >
-      {/* Image visible en entier sans déformation */}
       <Image
         src={pic}
         alt={projectName}
@@ -22,7 +21,6 @@ const ProjectBox = ({ pic, projectName, stack, projectUrl }) => {
         className="object-cover w-full h-full rounded-xl group-hover:opacity-10 transition-opacity duration-300"
       />
 
-      {/* Texte au hover, centré, responsive */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4 opacity-0 group-hover:opacity-100 transition duration-300 bg-white/0">
         <h3 className="text-sm sm:text-base md:text-lg text-blue-600 font-semibold break-words">
           {projectName}
