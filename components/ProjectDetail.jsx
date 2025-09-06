@@ -11,6 +11,7 @@ const ProjectDetail = ({
   projetLink,
   projetGit,
   techList,
+  code,
 }) => {
   return (
     <div className=" w-full">
@@ -33,12 +34,16 @@ const ProjectDetail = ({
           <p>Project</p>
           <h2>{projetTitle}</h2>
           <p>{projetStructure}</p>
-          <Link href={projetLink} target="_blank">
-            <button className=" px-8 py-2 mt-4 mr-8">Site</button>
-          </Link>
-          <Link href={projetGit} target="_blank">
-            <button className=" px-8 py-2 mt-4 mr-8">Code</button>
-          </Link>
+          {projetLink && (
+            <Link href={projetLink} target="_blank">
+              <button className="px-8 py-2 mt-4 mr-8">Site</button>
+            </Link>
+          )}
+          {projetGit && (
+            <Link href={projetGit} target="_blank">
+              <button className="px-8 py-2 mt-4 mr-8">Code</button>
+            </Link>
+          )}
         </div>
         <div
           className=" col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4"
@@ -60,6 +65,13 @@ const ProjectDetail = ({
             </motion.div>
           </div>
         </div>
+        {code && (
+          <div className=" col-span-5">
+            <p className=" font-bold py-2 px-2 rounded-md text-white bg-black w-fit">
+              {code}
+            </p>
+          </div>
+        )}
         <Link href="/#projets">
           <p className=" underline cursor-pointer"> Projets</p>
         </Link>

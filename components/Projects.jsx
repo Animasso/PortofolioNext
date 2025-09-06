@@ -15,6 +15,7 @@ import FinancialPic from "../public/assets/projectPic/MyFinancial.png";
 import resto from "../public/assets/projectPic/Comme-au restaurant.png";
 import Mugs from "../public/assets/projectPic/CreaMugPic.png";
 import MarmitePic from "../public/assets/projectPic/MarmitePic.png";
+import BienetrePic from "../public/assets/projectPic/BienetrePic.png";
 
 const Projects = () => {
   return (
@@ -27,6 +28,18 @@ const Projects = () => {
         <h2 className="py-4">Mes réalisations</h2>
         <div className=" grid md:grid-cols-3 gap-8">
           <ProjectBox
+            pic={BienetrePic}
+            projectName="Bien Etre Pour Tous"
+            stack="Wordpress Woocommerce Elementor"
+            projectUrl="/Bienetre"
+          />
+          <ProjectBox
+            pic={MarmitePic}
+            projectName="La Marmite Africaine"
+            stack="React JS Tailwind  Framer-motion Swipper "
+            projectUrl="/Marmite"
+          />
+          <ProjectBox
             pic={resto}
             projectName="Comme Au Restaurant"
             stack="React JS Tailwind  Framer-motion Swipper "
@@ -38,12 +51,7 @@ const Projects = () => {
             stack="React JS Tailwind  Framer-motion "
             projectUrl="/CreaMug"
           />
-          <ProjectBox
-            pic={MarmitePic}
-            projectName="La Marmite Africaine"
-            stack="React JS Tailwind  Framer-motion Swipper "
-            projectUrl="/Marmite"
-          />
+
           <ProjectBox
             pic={FinancialPic}
             projectName="My Financial Dashboard"
