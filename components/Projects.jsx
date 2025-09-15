@@ -94,30 +94,25 @@ const Projects = () => {
             stack="React js"
             projectUrl="/hrNetProject"
           />
-          <ProjectBox
+          {/* <ProjectBox
             pic={bankPic}
             projectName="Argent Bank"
             stack="React js"
             projectUrl="/argentBank"
-          />
+          /> */}
           <ProjectBox
             pic={learnPic}
             projectName="Learn@Home"
             stack="Figma"
             projectUrl="/learnHome"
           />
-          <ProjectBox
+          {/* <ProjectBox
             pic={graphPic}
             projectName="Sport See"
             stack="React js"
             projectUrl="/sportSee"
-          />
-          <ProjectBox
-            pic={fisheyePic}
-            projectName="Fisheye"
-            stack="React js"
-            projectUrl="/fisheye"
-          />
+          /> */}
+          {/*  */}
           <ProjectBox
             pic={KasaPic}
             projectName="Kasa"
